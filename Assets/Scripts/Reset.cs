@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Timers;
+using System;
 
 public class Reset : MonoBehaviour
 {
-    static System.Timers.Timer _timer;
+    Timer _timer = new Timer();
 
     static bool xxx = false;
     // Use this for initialization
@@ -32,16 +33,15 @@ public class Reset : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            _timer = new System.Timers.Timer();
+           
             _timer.Interval = 5000;
-            _timer.Elapsed += new ElapsedEventHandler(Checker);
-            _timer.Enabled = true;
-            xxx = true;
+            _timer.Elapsed += new ElapsedEventHandler(this.Checker);
+            _timer.Start();
             
         }
     }
 
-    public static void Checker(Object source, System.Timers.ElapsedEventArgs e)
+    public void Checker(object source, ElapsedEventArgs e)
     { 
         if(xxx == true)
         {

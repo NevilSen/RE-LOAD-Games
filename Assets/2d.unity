@@ -1525,6 +1525,7 @@ GameObject:
   - component: {fileID: 2119650858}
   - component: {fileID: 2119650861}
   - component: {fileID: 2119650862}
+  - component: {fileID: 2119650863}
   m_Layer: 12
   m_Name: env_PlatformTop
   m_TagString: Untagged
@@ -1614,6 +1615,17 @@ MonoBehaviour:
   - {fileID: 1057116479}
   coin: {fileID: 1172616928241850, guid: 283321513afc09a4b97d41d472f0cd74, type: 2}
 --- !u!114 &2119650862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119650857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae15139fff94a64c91579f46e6480aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2119650863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
